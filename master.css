@@ -1,5 +1,37 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Assistant', sans-serif;
+}
+
 body {
   margin: 0;
+}
+
+img{
+  display: block;
+}
+
+h1{
+  background-color: yellow;
+}
+
+h2{
+  background-color: lime;
+  margin: 0px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+p{
+  background-color: purple;
+  margin: 0px;
+}
+
+#logo{
+  position: relative;
+  top: 0px;
+  left: 0px;
+  height: 24px;
 }
 
 .topnav {
@@ -12,16 +44,17 @@ body {
   display: block;
   color: #fff;
   text-align: center;
-  padding: 14px 16px;
+  padding: 11px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 19px;
+  font-weight: 500;
+}
+#logo_topnav_override{ /* overrides ".topnav a" styles (above) for the logo */
+  padding: 11px 16px;
 }
 
 .topnav a:hover {
-  color: black;
-}
-
-.active {
+  background-color: #ed6044;
 }
 
 .topnav .icon {
@@ -36,8 +69,30 @@ body {
 
 /* content wrappers; all sections */
 
-.oneCol{                       /* delete; or use to give full width background color to welcome text box */
-    background-color: blue;
+.oneCol{                        /* delete; or use to give full width background color to welcome text box */
+}
+
+#leadImgText{
+  position: relative;
+}
+#leadText{
+  position: absolute;
+  text-align: right;
+  font-size: 60px;
+  font-weight: 800;
+  background-color: white;
+}
+#intro{                         /* orange background for homepage intro text */
+  background-color: #ed5244;
+}
+#intro>div{                     /* intro typographic controls */
+  font-weight: 100;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  line-height: 32px;
+  color: white;
+  padding-top: 25px; padding-bottom: 25px;    /* let left and right match rest of page; don't control here */
+                                              /* this overrides the other padding */
 }
 
 .twoCol{                   /* remove color */
@@ -49,18 +104,18 @@ body {
 
 /* contents; all divs */
 .oneCol>div{
-    background-color: lightblue;
     box-sizing: border-box;
     margin: auto;
     width: 900px;
+    padding: 18px;
 }
 .twoCol>div{
     background-color: pink;
     box-sizing: border-box;
     margin: auto;
     width: 50%;
-    /*display: inline-block;*/
     float: left;
+    padding: 18px;
 }
 
 /* FIXED MARGIN DESKTOP SIZE */
