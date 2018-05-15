@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +5,7 @@
 <meta name="viewport" content="initial-scale=1">
 <title>Programs</title>
 <link rel="stylesheet" href="css/master.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800" rel="stylesheet">
 <script>
 	function myFunction() {
 		var x = document.getElementById("myTopnav");
@@ -20,58 +20,92 @@
 <body>
 
 <div class="topnav" id="myTopnav">
-	<a href="#home" class="active">Home</a>
-	<a href="#news">Programs</a>
-	<a href="#contact">Club Hub</a>
-	<a href="#about">About</a>
-	<a href="#about">Contact</a>
-	<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	<a id="logo_topnav_override" href="index.html" class="active"><img id="logo" src="images/logo.png"></a>
+		<a class="top" href="programs.html">Programs</a>
+		<a class="dropdown" href="clubhub.html">Club Hub</a>
+		<a class="dropdown" href="about.html">About</a>
+		<a class="dropdown" href="contact.html">Contact</a>
+		<a href="javascript:void(0);" style="font-size:28px; padding: 3px 14px 5px 14px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
-<section class="oneCol"><div><img style="width:100%" src="images/programsbanner.jpg"></div></section>
+
+
+<section class="oneCol">
+	<div>
+		<h1>Programs</h1>
+		<br>
+		<hr>
+	</div>
+</section>
+
 <section class="twoCol">
 	<div>
-			<div class="circleframe">
-				<img src="images/saturday.jpg" alt="Saturday">
-			</div>
-	<h3>Saturday Skate Program</h3>
-	Ages 8-13. Visit and skate 2 different skate parks every Saturday for four Saturdays; receive small group lessons with a sponsored skateboarder.
- </div>
+		<div class="circleframe">
+			<img src="images/saturday.jpg" alt="Saturday">
+		</div>
+		<a href="satskate.html">
+			<h3>Saturday Skate Program</h3>
+			<p>Ages 8-13. Visit and skate 2 different skate parks every Saturday; receive small group lessons with a sponsored skateboarder.</p>
+		</div>
+	</a>
+	<div id="rightCol">
+		<div class="circleframe">
+			<img src="images/eduskate.jpg" alt="Eduskate">
+		</div>
+		<a href="eduskate.html">
+			<h3>Eduskate</h3>
+			<p>Visit our Club Hub and participate in group activities under our community after school program.  </p>
+		</a>
+	</div>
+</section>
+
+<section class="twoCol">
+	<div>
+		<div class="circleframe">
+			<img src="images/summercamp.jpg" alt="Youth Summer Skate Camp">
+		</div>
+		<a href="youthsummer">
+			<h3>Youth Summer Skate Camp</h3>
+			<p>Ages 8-13. Tour and skate Bay Area skateparks and receive small group lessons with a sponsored skateboarder.</p>
+		</a>
 	</div>
 	<div id="rightCol">
-			<div class="circleframe">
-				<img src="images/eduskate.jpg" alt="Eduskate">
-			</div>
-	<h3>Eduskate</h3>
-	Visit our Club Hub and participate in group activities under our community after school program.  </div>
+		<div class="circleframe">
+			<img src="images/summercamp.jpg" alt="Teen Summer Skate Camp"><!--change images for teen-->
+		</div>
+		<a href="teensummer">
+			<h3>Teen Summer Camp</h3>
+			<p>Ages 12-15. Tour and skate Bay Area skateparks and receive small group lessons with a sponsored skateboarder.</p>
+		</a>
+	</div>
 </section>
+
 <section class="twoCol">
 	<div>
-			<div class="circleframe">
-				<img src="images/youthskate.jpg" alt="Youth Summer Skate Camp">
-			</div>
-	<h3>Youth Summer Skate Camp</h3>
-	Ages 8-13. Tour and skate Bay Area skateparks and receive small group lessons with a sponsored skateboarder.</div>
+		<div class="circleframe">
+			<img src="images/privatelessons.jpg" alt="Private Skate Lessons">
+		</div>
+		<a href="lessons">
+			<h3>Private Skate Lessons</h3>
+			<p>Private one-on-one lessons with an SF Skate Club instructor. Have the chance to improve on your skateboarding skills.</p>
+		</a>
+	</div>
 	<div id="rightCol">
-			<div class="circleframe">
-				<img src="images/teenskate.jpg" alt="Teen Summer Skate Camp"><!--change images for teen-->
-			</div>
-	<h3>Teen Summer Camp</h3>
-	Ages 12-15. Tour and skate Bay Area skateparks and receive small group lessons with a sponsored skateboarder.</div>
+		<div class="circleframe">
+			<img src="images/summercamp.jpg" alt="Parties"><!--please change-->
+		</div>
+		<a href="parties">
+			<h3>Parties and Events</h3>
+			<p>Skate games, group lessons, prizes and recorded footage; nothing goes together better than a little cake, all your friends and tons of skateboarding. </p>
+		</a>
+	</div>
 </section>
-<section class="twoCol">
-	<div>
-			<div class="circleframe">
-				<img src="images/privatelessons.jpg" alt="Private Skate Lessons">
-			</div>
-	<h3>Private Skate Lessons</h3>
-	Private one-on-one lessons with an SF Skate Club instructor. Have the chance to learn or improve on your skateboarding skills.</div>
-	<div id="rightCol">
-			<div class="circleframe">
-				<img src="images/parties.jpg" alt="Parties"><!--please change-->
-			</div>
-	<h3>Parties and Events</h3>
-	Skate games, group lessons, prizes and recorded footage; nothing goes together better than a little cake, all your friends and tons of skateboarding. </div>
-</section>
+
+<div id="clearFooter"></div>
+<footer>
+	<a href="https://www.instagram.com/sfskateclub/?hl=en"><img src="images/ig.png"></a>
+	<a href="https://www.facebook.com/San-Francisco-Skate-Club-140490628302/"><img src="images/fb.png" style="padding: 0 7px 0 7px;"></a>
+	<div>© 2018 San Francisco Skate Club</div>
+</footer>
 
 </body>
 </html>
