@@ -19,10 +19,15 @@ img{
 }
 
 h2{
-  background-color: lime;
-  margin: 0px;
+  background-color: red;
+  margin: 0 0 10px 0;
   font-size: 28px;
   font-weight: 700;
+}
+p{
+  margin: 14px 0 0 0;
+  font-size: 16px;
+  line-height: 23px;
 }
 
 footer{
@@ -56,29 +61,6 @@ footer img{
   left: 0px;
   height: 24px;
 }
-
-/* programs -----------*/
-#rightCol {
-  background-color: tan
-}
-
-.circleframe {
-  /*display: inline-block;*/
-  float: left;
-  position: relative;
-  width: 105px;
-  height: 105px;
-  overflow: hidden;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.circleframe img {
-  width: auto;
-  height: 100%;
-  margin-left: -10px;
-}
-/*end---------*/
 
 .topnav {
   overflow: hidden;
@@ -192,12 +174,37 @@ div#basicPage{
 
 /* -------------------------------------------------------------------------- */
 
+/* programs -----------*/
+#rightCol {
+  background-color: tan
+}
+
+.circleframe {
+  /*display: inline-block;*/
+  float: left;
+  position: relative;
+  width: 105px;
+  height: 105px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.circleframe img {
+  width: auto;
+  height: 100%;
+  margin-left: -10px;
+}
+/*end---------*/
+
+#mapbox{height: 450px;}
 
 /* FIXED MARGIN DESKTOP SIZE; BASIC PAGE*/
 @media screen and (max-width: 880px) {
     div#basicPage{
         width: calc(100% - 50px);
     }
+    #mapbox{height: 50vw;}
 }
 /* FIXED MARGIN DESKTOP SIZE */
 @media screen and (max-width: 980px) {
@@ -259,7 +266,7 @@ div#basicPage{
     #leadText{
       right: 0.4em; /* delete if same */
       bottom: 4vw;  /* delete if same */
-      font-size: 9vw;
+      font-size: 8vw;
     }
 
     #intro>div{                     /* intro typographic controls */
