@@ -1,6 +1,7 @@
 *{
   box-sizing: border-box;
   font-family: 'Assistant', sans-serif;
+  color: #333333;
 }
 
 html{
@@ -19,7 +20,6 @@ img{
 }
 
 h2{
-  background-color: red;
   margin: 0 0 10px 0;
   font-size: 28px;
   font-weight: 700;
@@ -28,6 +28,12 @@ p{
   margin: 14px 0 0 0;
   font-size: 16px;
   line-height: 23px;
+}
+
+hr{
+  border: none;
+  height: 1px;
+  background-color: #333333;
 }
 
 footer{
@@ -51,7 +57,7 @@ footer img{
 }
 #clearFooter{
   clear: both;
-  padding-top: 85px; /* footer height + desired above whitespace */
+  padding-top: 110px; /* footer height + desired above whitespace (footer is 85px) */
 }
 
 
@@ -130,7 +136,7 @@ footer img{
     padding: 22px;
 }
 .twoCol>div{
-    background-color: pink;
+    /*background-color: pink;*/
     box-sizing: border-box;
     margin: auto;
     width: 50%;
@@ -146,15 +152,13 @@ div#basicPage{
 #basicPage img{
   width: 100%;
 }
-#basicPage h1{
+h1{
   margin: 22px 0 0 0;
-  color: #333333;
   font-size: 34px;
   line-height: 34px;
 }
 #basicPage p{
   margin: 18px 0 0 0;
-  color: #333333;
   font-size: 17px;
   line-height: 25px;
 }
@@ -175,25 +179,40 @@ div#basicPage{
 /* -------------------------------------------------------------------------- */
 
 /* programs -----------*/
-#rightCol {
+/*#rightCol {
   background-color: tan
-}
+}*/
 
 .circleframe {
-  /*display: inline-block;*/
   float: left;
   position: relative;
   width: 105px;
   height: 105px;
   overflow: hidden;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 18px;
 }
 
 .circleframe img {
   width: auto;
   height: 100%;
   margin-left: -10px;
+}
+
+h3{
+  margin: 6px 0 0 0;
+}
+
+h3+p{
+  margin: 8px 0 0 0;
+  line-height: 21px;
+}
+
+.twoCol a:link, .twoCol a:visited{
+  text-decoration: none;
+}
+.twoCol a:hover, .twoCol a:active{
+  text-decoration: underline;
 }
 /*end---------*/
 
@@ -206,13 +225,16 @@ div#basicPage{
     }
     #mapbox{height: 50vw;}
 }
+
 /* FIXED MARGIN DESKTOP SIZE */
 @media screen and (max-width: 980px) {
 
     .oneCol>div, .twoCol{
         width: calc(100% - 50px);
     }
-
+    .twoCol>div{
+      width: 100%;
+    }
     #intro>div{                     /* intro typographic controls */
       font-size: 19px;
       letter-spacing: 0.5px;
