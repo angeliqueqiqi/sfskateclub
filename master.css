@@ -57,6 +57,29 @@ footer img{
   height: 24px;
 }
 
+/* programs -----------*/
+#rightCol {
+  background-color: tan
+}
+
+.circleframe {
+  /*display: inline-block;*/
+  float: left;
+  position: relative;
+  width: 105px;
+  height: 105px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.circleframe img {
+  width: auto;
+  height: 100%;
+  margin-left: -10px;
+}
+/*end---------*/
+
 .topnav {
   overflow: hidden;
   background-color: #ed5244;
